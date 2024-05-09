@@ -24,3 +24,18 @@ class WeightConverter:
         self.result_label = ttk.Label(root, text="")
         self.result_label.grid(row=2, columnspan=3)
         
+        self.radio_kg_to_lb = ttk.Radiobutton(root, text="kg to lb", variable=self.conversion_mode, value="kg_to_lb")
+        self.radio_kg_to_lb.grid(row=3, column=0)
+        
+        self.radio_lb_to_kg = ttk.Radiobutton(root, text="lb to kg", variable=self.conversion_mode, value="lb_to_kg")
+        self.radio_lb_to_kg.grid(row=3, column=1)
+        
+        self.radio_kg_to_g = ttk.Radiobutton(root, text="kg to g", variable=self.conversion_mode, value="kg_to_g")
+        self.radio_kg_to_g.grid(row=3, column=2)
+        
+        self.radio_g_to_kg = ttk.Radiobutton(root, text="g to kg", variable=self.conversion_mode, value="g_to_kg")
+        self.radio_g_to_kg.grid(row=3, column=3)
+
+        self.root.geometry("300x200")  # Set window size to 300x200 pixels
+
+
